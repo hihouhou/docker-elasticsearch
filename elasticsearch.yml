@@ -1,5 +1,5 @@
 cluster.name: 
 node.name: ""
-network.host: 
 discovery.zen.ping.multicast.enabled: false
 discovery.zen.ping.unicast.hosts: ["", "", ""]
+path.conf: /etc/elasticsearch
