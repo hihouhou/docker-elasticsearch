@@ -26,4 +26,4 @@ RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
 
 EXPOSE 9200 9300
 
-CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.default.config=/etc/elasticsearch/elasticsearch.yml"]
+CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.insecure.allow.root=true","--default.path.conf=/etc/elasticsearch/"]
