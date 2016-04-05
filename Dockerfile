@@ -21,8 +21,8 @@ RUN wget https://download.elastic.co/elasticsearch/elasticsearch/$ES_VERSION.deb
 ADD elasticsearch.yml /etc/elasticsearch/
 ADD logging.yml /etc/elasticsearch/
 
-#install paramedic plugin
-RUN /usr/share/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic
+#install elasticsearch-HQ plugin
+RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
 
 EXPOSE 9200 9300
 
