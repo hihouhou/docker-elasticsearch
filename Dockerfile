@@ -10,6 +10,7 @@ FROM debian:latest
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
 ENV ES_VERSION elasticsearch-2.3.1
+ENV NODE $node
 
 # Update & install packages for graylog
 RUN apt-get update && \
@@ -26,4 +27,4 @@ RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
 
 EXPOSE 9200 9300
 
-CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.insecure.allow.root=true","--default.path.conf=/etc/elasticsearch/"]
+CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.insecure.allow.root=true", "--default.path.conf=/etc/elasticsearch/", "--node.name=${node}"]
