@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV ES_VERSION elasticsearch-2.3.1
+ENV ES_VERSION v8.11.0
 ENV NODE $node
 
 # Update & install packages for graylog
