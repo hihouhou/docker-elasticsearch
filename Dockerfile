@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV ES_VERSION v8.12.0
+ENV ES_VERSION v8.12.1
 ENV NODE $node
 
 # Update & install packages for graylog
